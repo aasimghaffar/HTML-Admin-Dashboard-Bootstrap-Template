@@ -12,7 +12,7 @@
         id: '1',
         start: curYear + '-' + curMonth + '-02',
         end: curYear + '-' + curMonth + '-03',
-        title: 'Spruko Meetup',
+        title: 'CubixSol Meetup',
         backgroundColor: '#6c5ffc',
         borderColor: '#6c5ffc',
         description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary'

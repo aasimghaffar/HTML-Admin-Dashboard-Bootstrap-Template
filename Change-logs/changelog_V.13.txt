@@ -1,5 +1,5 @@
 
-Project Name: Sash - Bootstrap 5 Admin & Dashboard Template
+Project Name: CubixSol Admin - Bootstrap 5 Admin & Dashboard
 
 Version : V.13
 
@@ -21,13 +21,13 @@ Updates :-
 ----------------------------------------------------------------------
 1) Converted from Boostrap-4 version to Boostrap-5 Version.
 ----------------------------------------------------------------------
-	In the most recent release of Sash, we have upgraded the Bootstrap version to the latest iteration of v5.3.2.
+	In the most recent release of CubixSol Admin, we have upgraded the Bootstrap version to the latest iteration of v5.3.2.
 
 ----------------------------------------------------------------------
 2) Divided all Html pages into partials(src and dist)
 ----------------------------------------------------------------------
 
-In this latest version of "Sash," we've introduced a fundamental change in how we manage code in our project. 
+In this latest version of "CubixSol Admin," we've introduced a fundamental change in how we manage code in our project. 
 We've adopted a more structured approach by utilizing the "src" and "dist" folders. 
 This change aims to streamline the development process and enhance the efficiency of code deployment on production sites. 
 Please take a moment to familiarize yourself with the distinctions between "src" and "dist" for a smoother development experience.
@@ -35,13 +35,13 @@ Please take a moment to familiarize yourself with the distinctions between "src"
 During development, you should primarily work within the "src" folder, making changes and improvements to the codebase.
 When changes are made in the "src" folder, it's crucial to run the associated "gulp" command to propagate those changes to the "dist" folder.
 Running the "gulp" command ensures that the modifications made in the "src" folder are mirrored in the "dist" folder, ready for production deployment.
-For a more comprehensive understanding of how "src" and "dist" are managed within the "Sash" project, we strongly recommend reviewing our updated documentation. 
+For a more comprehensive understanding of how "src" and "dist" are managed within the "CubixSol Admin" project, we strongly recommend reviewing our updated documentation. 
 This documentation provides in-depth insights into the workflow, commands, and best practices related to this new approach. 
 
 ----------------------------------------------------------------------
 3) No jquery dependency
 ----------------------------------------------------------------------
-	The most recent release of Sash has removed jQuery to improve flexibility. 
+	The most recent release of CubixSol Admin has removed jQuery to improve flexibility. 
 	jQuery has been a popular JavaScript library for a long time, but as modern web development has evolved, many developers have moved away from it in favor of native JavaScript or other libraries and frameworks. 
 	Removing jQuery can help reduce the size and complexity of your codebase and improve performance.
 
@@ -52,7 +52,7 @@ This documentation provides in-depth insights into the workflow, commands, and b
 ----------------------------------------------------------------------
 5) Added New Switcher Page. 
 ----------------------------------------------------------------------
-	New switcher is added to Sash
+	New switcher is added to CubixSol Admin
 	In this switcher we have added new features like 
 
 	1) Single switch Rtl 
@@ -108,8 +108,6 @@ New Html pages are added .please follow below
 ----------------------------------------------------------------------
 	Documentation and gulp is Updated please go through it .
 
-Thanking you,
-@spruko.
 
 
 

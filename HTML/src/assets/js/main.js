@@ -1,11 +1,11 @@
 (function () {
   "use strict";
-  if (localStorage.getItem("sashdarktheme")) {
+  if (localStorage.getItem("cubixdarktheme")) {
     document.querySelector("html").setAttribute("data-theme-mode", "dark");
     document.querySelector("html").setAttribute("data-menu-styles", "dark");
     document.querySelector("html").setAttribute("data-header-styles", "dark");
   }
-  if (localStorage.sashrtl) {
+  if (localStorage.cubixrtl) {
     let html = document.querySelector("html");
     html.setAttribute("dir", "rtl");
     document
@@ -15,7 +15,7 @@
         "../assets/libs/bootstrap/css/bootstrap.rtl.min.css"
       );
   }
-  if (localStorage.getItem("sashlayout") == "horizontal") {
+  if (localStorage.getItem("cubixlayout") == "horizontal") {
     document
       .querySelector("html")
       .setAttribute("data-nav-layout", "horizontal");
@@ -69,13 +69,13 @@
       html.setAttribute("data-menu-styles", "dark");
       html.setAttribute("data-header-styles", "dark");
     }
-    if (localStorage.sashdarktheme) {
+    if (localStorage.cubixdarktheme) {
       let html = document.querySelector("html");
       html.setAttribute("data-theme-mode", "dark");
     }
-    if (localStorage.sashlayout) {
+    if (localStorage.cubixlayout) {
       let html = document.querySelector("html");
-      let layoutValue = localStorage.getItem("sashlayout");
+      let layoutValue = localStorage.getItem("cubixlayout");
       html.setAttribute("data-nav-layout", "horizontal");
       setTimeout(() => {
         clearNavDropdown();
@@ -85,33 +85,33 @@
         checkHoriMenu();
       }, 5000);
     }
-    if (localStorage.sashverticalstyles) {
+    if (localStorage.cubixverticalstyles) {
       let html = document.querySelector("html");
-      let verticalStyles = localStorage.getItem("sashverticalstyles");
+      let verticalStyles = localStorage.getItem("cubixverticalstyles");
 
       if (verticalStyles == "default") {
         html.setAttribute("data-vertical-style", "default");
-        localStorage.removeItem("sashnavstyles");
+        localStorage.removeItem("cubixnavstyles");
       }
       if (verticalStyles == "closed") {
         html.setAttribute("data-vertical-style", "closed");
-        localStorage.removeItem("sashnavstyles");
+        localStorage.removeItem("cubixnavstyles");
       }
       if (verticalStyles == "icontext") {
         html.setAttribute("data-vertical-style", "icontext");
-        localStorage.removeItem("sashnavstyles");
+        localStorage.removeItem("cubixnavstyles");
       }
       if (verticalStyles == "overlay") {
         html.setAttribute("data-vertical-style", "overlay");
-        localStorage.removeItem("sashnavstyles");
+        localStorage.removeItem("cubixnavstyles");
       }
       if (verticalStyles == "detached") {
         html.setAttribute("data-vertical-style", "detached");
-        localStorage.removeItem("sashnavstyles");
+        localStorage.removeItem("cubixnavstyles");
       }
       if (verticalStyles == "doublemenu") {
         html.setAttribute("data-vertical-style", "doublemenu");
-        localStorage.removeItem("sashnavstyles");
+        localStorage.removeItem("cubixnavstyles");
         setTimeout(() => {
           const menuSlideItem = document.querySelectorAll(
             ".main-menu > li > .side-menu__item"
@@ -135,7 +135,7 @@
           menuSlideItem.forEach((e) => {
             // Add an event listener to the menu slide item to show the tooltip
             e.addEventListener("mouseenter", () => {
-              if (localStorage.sashverticalstyles == "doublemenu") {
+              if (localStorage.cubixverticalstyles == "doublemenu") {
                 tooltip.style.setProperty("display", "block");
                 tooltip.textContent =
                   e.querySelector(".side-menu__label").textContent;
@@ -159,57 +159,57 @@
         }, 1000);
       }
     }
-    if (localStorage.sashnavstyles) {
+    if (localStorage.cubixnavstyles) {
       let html = document.querySelector("html");
-      let navStyles = localStorage.getItem("sashnavstyles");
+      let navStyles = localStorage.getItem("cubixnavstyles");
       if (navStyles == "menu-click") {
         html.setAttribute("data-nav-style", "menu-click");
-        localStorage.removeItem("sashverticalstyles");
+        localStorage.removeItem("cubixverticalstyles");
         html.removeAttribute("data-vertical-style");
       }
       if (navStyles == "menu-hover") {
         html.setAttribute("data-nav-style", "menu-hover");
-        localStorage.removeItem("sashverticalstyles");
+        localStorage.removeItem("cubixverticalstyles");
         html.removeAttribute("data-vertical-style");
       }
       if (navStyles == "icon-click") {
         html.setAttribute("data-nav-style", "icon-click");
-        localStorage.removeItem("sashverticalstyles");
+        localStorage.removeItem("cubixverticalstyles");
         html.removeAttribute("data-vertical-style");
       }
       if (navStyles == "icon-hover") {
         html.setAttribute("data-nav-style", "icon-hover");
-        localStorage.removeItem("sashverticalstyles");
+        localStorage.removeItem("cubixverticalstyles");
         html.removeAttribute("data-vertical-style");
       }
     }
-    if (localStorage.sashclassic) {
+    if (localStorage.cubixclassic) {
       let html = document.querySelector("html");
       html.setAttribute("data-page-style", "classic");
     }
-    if (localStorage.sashboxed) {
+    if (localStorage.cubixboxed) {
       let html = document.querySelector("html");
       html.setAttribute("data-width", "boxed");
     }
-    if (localStorage.sashheaderfixed) {
+    if (localStorage.cubixheaderfixed) {
       let html = document.querySelector("html");
       html.setAttribute("data-header-position", "fixed");
     }
-    if (localStorage.sashheaderscrollable) {
+    if (localStorage.cubixheaderscrollable) {
       let html = document.querySelector("html");
       html.setAttribute("data-header-position", "scrollable");
     }
-    if (localStorage.sashmenufixed) {
+    if (localStorage.cubixmenufixed) {
       let html = document.querySelector("html");
       html.setAttribute("data-menu-position", "fixed");
     }
-    if (localStorage.sashmenuscrollable) {
+    if (localStorage.cubixmenuscrollable) {
       let html = document.querySelector("html");
       html.setAttribute("data-menu-position", "scrollable");
     }
-    if (localStorage.sashMenu) {
+    if (localStorage.cubixMenu) {
       let html = document.querySelector("html");
-      let menuValue = localStorage.getItem("sashMenu");
+      let menuValue = localStorage.getItem("cubixMenu");
       switch (menuValue) {
         case "light":
           html.setAttribute("data-menu-styles", "light");
@@ -230,9 +230,9 @@
           break;
       }
     }
-    if (localStorage.sashHeader) {
+    if (localStorage.cubixHeader) {
       let html = document.querySelector("html");
-      let headerValue = localStorage.getItem("sashHeader");
+      let headerValue = localStorage.getItem("cubixHeader");
       switch (headerValue) {
         case "light":
           html.setAttribute("data-header-styles", "light");
