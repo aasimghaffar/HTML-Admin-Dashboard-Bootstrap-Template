@@ -1,16 +1,16 @@
 (function () {
     'use strict';
-    if (localStorage.getItem("sashdarktheme")) {
+    if (localStorage.getItem("cubixdarktheme")) {
         document.querySelector("html").setAttribute("data-theme-mode", "dark")
         document.querySelector("html").setAttribute("data-menu-styles", "dark")
         document.querySelector("html").setAttribute("data-header-styles", "dark")
     }
-    if (localStorage.sashrtl) {
+    if (localStorage.cubixrtl) {
         let html = document.querySelector('html');
         html.setAttribute("dir", "rtl");
         document.querySelector("#style")?.setAttribute("href", "../assets/libs/bootstrap/css/bootstrap.rtl.min.css");
     }
-    if (localStorage.getItem("sashlayout") == "horizontal") {
+    if (localStorage.getItem("cubixlayout") == "horizontal") {
         document.querySelector("html").setAttribute("data-nav-layout", "horizontal")
     }
     if(localStorage.loaderEnable == 'true'){
@@ -46,11 +46,11 @@
 
 
         }
-        if (localStorage.sashdarktheme) {
+        if (localStorage.cubixdarktheme) {
             let html = document.querySelector('html');
             html.setAttribute('data-theme-mode', 'dark');
         }
-        if (localStorage.sashrtl) {
+        if (localStorage.cubixrtl) {
             let html = document.querySelector('html');
             html.setAttribute('dir', 'rtl');
             setTimeout(() => {

@@ -241,9 +241,9 @@
       document.querySelector("#switcher-background2").checked = false;
       document.querySelector("#switcher-background1").checked = false;
       document.querySelector("#switcher-background").checked = false;
-      localStorage.removeItem("sashdarktheme");
-      localStorage.removeItem("sashMenu");
-      localStorage.removeItem("sashHeader");
+      localStorage.removeItem("cubixdarktheme");
+      localStorage.removeItem("cubixMenu");
+      localStorage.removeItem("cubixHeader");
       localStorage.removeItem("bodylightRGB");
       localStorage.removeItem("bodyBgRGB");
     } else {
@@ -270,9 +270,9 @@
       document.querySelector("#switcher-background2").checked = false;
       document.querySelector("#switcher-background1").checked = false;
       document.querySelector("#switcher-background").checked = false;
-      localStorage.setItem("sashdarktheme", "true");
-      localStorage.setItem("sashMenu", "dark");
-      localStorage.setItem("sashHeader", "dark");
+      localStorage.setItem("cubixdarktheme", "true");
+      localStorage.setItem("cubixMenu", "dark");
+      localStorage.setItem("cubixHeader", "dark");
       localStorage.removeItem("bodylightRGB");
       localStorage.removeItem("bodyBgRGB");
     }

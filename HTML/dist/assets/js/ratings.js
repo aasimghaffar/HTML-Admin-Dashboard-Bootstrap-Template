@@ -135,7 +135,7 @@
     document.getElementById("switcher-ltr").addEventListener("click",ratingLTR)
     document.getElementById("reset-all").addEventListener("click",ratingLTR)
 
-    if(localStorage.getItem("sashrtl")){
+    if(localStorage.getItem("cubixrtl")){
         setTimeout(() => {
             ratingRTL()
         }, 100);

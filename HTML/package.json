@@ -1,5 +1,6 @@
 {
-  "name": "sash",
+  "name": "cubixsol-admin",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,8 +9,8 @@
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "spruko technology",
-  "license": "ISC",
+  "author": "CubixSol",
+  "license": "UNLICENSED",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",

@@ -131,16 +131,16 @@ function switcherClick() {
   /* Light Layout Start */
   let lightThemeVar = lightBtn.addEventListener("click", () => {
     lightFn();
-    localStorage.setItem("sashHeader", "light");
-    localStorage.setItem("sashMenu", "light");
+    localStorage.setItem("cubixHeader", "light");
+    localStorage.setItem("cubixMenu", "light");
   });
   /* Light Layout End */
 
   /* Dark Layout Start */
   let darkThemeVar = darkBtn.addEventListener("click", () => {
     darkFn();
-    localStorage.setItem("sashMenu", "dark");
-    localStorage.setItem("sashHeader", "dark");
+    localStorage.setItem("cubixMenu", "dark");
+    localStorage.setItem("cubixHeader", "dark");
   });
   /* Dark Layout End */
 
@@ -188,8 +188,8 @@ function switcherClick() {
 
   /* rtl start */
   let rtlVar = rtlBtn.addEventListener("click", () => {
-    localStorage.setItem("sashrtl", true);
-    localStorage.removeItem("sashltr");
+    localStorage.setItem("cubixrtl", true);
+    localStorage.removeItem("cubixltr");
     rtlFn();
   });
   /* rtl end */
@@ -197,8 +197,8 @@ function switcherClick() {
   /* ltr start */
   let ltrVar = ltrBtn.addEventListener("click", () => {
     //    local storage
-    localStorage.setItem("sashltr", true);
-    localStorage.removeItem("sashrtl");
+    localStorage.setItem("cubixltr", true);
+    localStorage.removeItem("cubixrtl");
     ltrFn();
   });
   /* ltr end */
@@ -239,7 +239,7 @@ function rtlFn() {
   checkOptions();
 }
 
-if (localStorage.sashrtl) {
+if (localStorage.cubixrtl) {
   rtlFn();
 }
 
@@ -248,7 +248,7 @@ function lightFn() {
   html.setAttribute("data-theme-mode", "light");
   document.querySelector("#switcher-light-theme").checked = true;
   updateColors();
-  localStorage.removeItem("sashdarktheme");
+  localStorage.removeItem("cubixdarktheme");
   checkOptions();
   html.style.removeProperty("--primary-rgb");
 }
@@ -257,8 +257,8 @@ function darkFn() {
   let html = document.querySelector("html");
   html.setAttribute("data-theme-mode", "dark");
   updateColors();
-  localStorage.setItem("sashdarktheme", true);
-  localStorage.removeItem("sashlighttheme");
+  localStorage.setItem("cubixdarktheme", true);
+  localStorage.removeItem("cubixlighttheme");
   checkOptions();
   html.style.removeProperty("--primary-rgb");
 }
@@ -282,12 +282,12 @@ function ResetAllFn() {
 
 function checkOptions() {
   // dark
-  if (localStorage.getItem("sashdarktheme")) {
+  if (localStorage.getItem("cubixdarktheme")) {
     document.querySelector("#switcher-dark-theme").checked = true;
   }
 
   //RTL
-  if (localStorage.getItem("sashrtl")) {
+  if (localStorage.getItem("cubixrtl")) {
     document.querySelector("#switcher-rtl").checked = true;
   }
 }
@@ -312,18 +312,18 @@ function localStorageBackup() {
       .querySelector("html")
       .style.setProperty("--primary-rgb", localStorage.primaryRGB);
   }
-  if (localStorage.sashdarktheme) {
+  if (localStorage.cubixdarktheme) {
     let html = document.querySelector("html");
     html.setAttribute("data-theme-mode", "dark");
   }
 
-  if (localStorage.sashrtl) {
+  if (localStorage.cubixrtl) {
     let html = document.querySelector("html");
     html.setAttribute("dir", "rtl");
   }
-  if (localStorage.sashlayout) {
+  if (localStorage.cubixlayout) {
     let html = document.querySelector("html");
-    let layoutValue = localStorage.getItem("sashlayout");
+    let layoutValue = localStorage.getItem("cubixlayout");
     html.setAttribute("data-nav-layout", "horizontal");
   }
 }

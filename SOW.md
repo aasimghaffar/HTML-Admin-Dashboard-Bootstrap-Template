@@ -1,8 +1,7 @@
 # STATEMENT OF WORK (SOW)
 
-**Project Name:** Sash – Bootstrap 5 Premium Admin & Dashboard Template  
-**Document Reference:** SOW-SASH-BS5-2026-V1  
-**Original Developer / Author:** Spruko Technologies Private Limited  
+**Project Name:** CubixSol – Bootstrap 5 Admin & Dashboard  
+**Document Reference:** SOW-CUBIXSOL-BS5-2026-V1  
 **Current Framework Version:** Bootstrap v5.3.2 | Template Version: V.13  
 **Effective Date:** August 7, 2026  
 **Document Status:** Final Draft  
@@ -11,9 +10,9 @@
 
 ## 1. Executive Summary
 
-This Statement of Work (SOW) details the technical specifications, scope of work, deliverables, timeline, milestones, quality assurance criteria, and governance model for the setup, customization, and implementation of the **Sash – Bootstrap 5 Premium Admin & Dashboard Template**.
+This Statement of Work (SOW) details the technical specifications, scope of work, deliverables, timeline, milestones, quality assurance criteria, and governance model for the setup, customization, and implementation of the **CubixSol – Bootstrap 5 Admin & Dashboard**.
 
-Sash is a state-of-the-art, responsive admin and dashboard template engineered with modern web standards, including Bootstrap 5.3.2, Sass (SCSS), modular HTML partials, Gulp 4 automation, and pure JavaScript (zero jQuery dependency). The project provides a versatile enterprise UI foundation featuring over 137+ pre-built HTML pages, dual directionality (LTR/RTL), dark/light theme engines, dynamic color customization switchers, and an extensive suite of data visualization and form processing components.
+CubixSol Admin is a state-of-the-art, responsive admin and dashboard template engineered with modern web standards, including Bootstrap 5.3.2, Sass (SCSS), modular HTML partials, Gulp 4 automation, and pure JavaScript (zero jQuery dependency). The project provides a versatile enterprise UI foundation featuring over 137+ pre-built HTML pages, dual directionality (LTR/RTL), dark/light theme engines, dynamic color customization switchers, and an extensive suite of data visualization and form processing components.
 
 ---
 
@@ -30,7 +29,7 @@ Sash is a state-of-the-art, responsive admin and dashboard template engineered w
    - NPM dependency installation and build tool configuration.
    - Gulp task automation setup for SCSS compilation, HTML partial inclusion, CSS minification, JavaScript uglification, Autoprefixer, and BrowserSync.
 2. **Core Theme & Switcher Customization:**
-   - Configuration of the Sash Theme Switcher script and CSS variables.
+   - Configuration of the Theme Switcher script and CSS variables.
    - Custom branding integration (Logos, favicons, typography, custom color palette definition).
    - Validation of dual directionality (LTR and RTL) layout behavior.
 3. **Module & Page Integration (137+ Templates):**
@@ -93,8 +92,7 @@ HTML-Admin-Dashboard-Bootstrap-Template/
 │   │   └── html/                   # Source HTML templates & partials
 │   ├── gulpfile.js                 # Gulp build script definitions
 │   └── package.json                # Project dependencies & build scripts
-├── README.md                       # Repository overview & licensing agreement
-├── Readme-Legal.txt                # Copyright & DMCA compliance terms
+├── README.md                       # Repository overview
 └── SOW.md                          # Statement of Work (this document)
 ```
 
@@ -161,7 +159,7 @@ gantt
 
 *Legend: **R** = Responsible, **A** = Accountable, **C** = Consulted, **I** = Informed*
 
-| Project Activity | Client / Stakeholder | Lead Frontend Engineer | QA Engineer | Spruko Tech (Vendor) |
+| Project Activity | Client / Stakeholder | Lead Frontend Engineer | QA Engineer | Third-Party Vendor |
 | :--- | :---: | :---: | :---: | :---: |
 | Business Requirements & Branding Assets | **A** | **R** | **I** | **I** |
 | License Acquisition & Legal Compliance | **A** | **I** | **I** | **C** |
@@ -172,12 +170,9 @@ gantt
 
 ---
 
-## 7. Legal, Copyright & DMCA Compliance
+## 7. Third-Party Assets
 
-1. **Copyright Ownership:** The original codebase and template design are copyrighted works owned by **Spruko Technologies Private Limited**.
-2. **License Compliance:** Usage of this Product requires a valid Standard or Extended License purchased via ThemeForest / Codecanyon / Spruko Technologies. Unauthorized redistribution, resale, or sublicensing is strictly prohibited under international copyright laws and treaties.
-3. **DMCA Enforcement:** In accordance with the Digital Millennium Copyright Act (DMCA), unauthorized hosting, public distribution, or IP infringement will be subject to immediate takedown notices issued to hosting providers, domain registrars, payment gateways, and search engines.
-4. **Third-Party Open-Source Assets:** All open-source plugins listed in `Dependencies.txt` (Bootstrap, ApexCharts, Leaflet, SweetAlert2, etc.) remain subject to their respective open-source licenses (MIT, Apache 2.0, BSD).
+1. **Third-Party Open-Source Assets:** All open-source plugins listed in `Dependencies.txt` (Bootstrap, ApexCharts, Leaflet, SweetAlert2, etc.) remain subject to their respective open-source licenses (MIT, Apache 2.0, BSD).
 
 ---
 
